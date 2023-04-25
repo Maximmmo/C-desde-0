@@ -6,7 +6,8 @@
 //ej:
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <math.h>
+/*
  int main(){
     //int i = 1123;
     
@@ -27,3 +28,5 @@ int main() {
     }
     return 0;
 }
+*/
+

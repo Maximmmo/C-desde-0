@@ -3,9 +3,9 @@
 #include <stdio.h>
 int main(){
     float numeroIngresado, suma = 0;
-    for(int i = 1; i <= 10; i++);
+    for(float i = 1; i <= 10; i++)
     {
-        printf("ingresa un numero %d: \n", i);
+        printf("ingresa un numero: \n");
         scanf("&f", &numeroIngresado);
         suma += numeroIngresado;
     }

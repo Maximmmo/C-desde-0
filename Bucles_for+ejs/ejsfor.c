@@ -203,6 +203,7 @@ int main(){
 */
 
 
+/**
 //pedir un numero y mostrar su tabla de multiplicar
 int main(){
     float nummultipl;
@@ -218,3 +219,52 @@ int main(){
 
     return 0; 
 }
+*/
+
+
+//ejercicio de interes compuesto(me agarro paja de hacerlo es muy largo)
+/*
+Ejemplo de como tiene q quedar:
+dinero actual: $*****
+dinero que se agrega anualmente: $*****
+camtidad de años a invertir: *** años
+int anual: ****
+rta: ***** 
+*/
+
+int main(){
+    float dineroactual, adicionanual, interesAnual = 0;
+    int anios;
+
+    printf("Bienvenido a la calculadora de interes compuesto\n");
+    printf("Ingrese su dinero actual: ");
+    scanf("%f", &dineroactual);
+
+    printf("Ingrese el dinero que va a agregar anuelamente: ");
+    scanf("%f", &adicionanual);
+
+    printf("Ingrese los años a invertir el dinero: ");
+    scanf("%d", &anios);
+
+    printf("Ingrese el porcentaje de interes anual: ");
+    scanf("%f", &interesAnual);
+
+    float total = dineroactual;
+
+    for(int i = 0; i <= anios; i++ )
+    {
+        total += adicionanual;
+        total = total + (interesAnual * total / 100);
+
+    }
+
+    printf("En %d años va a tener un total de: %.2f", anios, total);
+
+    return 0;
+}
+
+
+
+
+
+

@@ -4,8 +4,19 @@
 //se revisa la condision y luego se revisa el codigo para ver si se tiene q repetir la el codigo para que la consicion este bien o fuera de los limites
 #include <stdlib.h>
 #include <stdio.h>
+int main()
+{
+    int num = 0;
+    while (num < 10)
+    {
+        num++;
+        printf("Como me gusta la noche %d\n", num);
+    }
+    
+    return 0;
+}
 
-//BUCLE DO WHILE
+//BUCLE DO WHILE (REPETIR MIENTRAS QUE)
 //es muy parecido, se ejecuta el codigo primero y luego se revisa la condicion
 // siempre se ejecuta por lo menos una vez el codigo
 
@@ -25,6 +36,8 @@ int main() {
 */
 
 //Calcula el dinero ingresado de la venta del dia de hoy
+
+/*
 int main() {
     float ventaCliente, ventaTotal = 0;
     
@@ -38,6 +51,6 @@ int main() {
 
     return 0; 
 }
-
+*/
 
 

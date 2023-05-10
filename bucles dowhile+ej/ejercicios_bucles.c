@@ -274,6 +274,7 @@ int main(){
 // 1- Consultar saldo
 // 2- Consultar CBU
 // 3- Salir
+/*
 int main(){
 
     int dni = 35555555;
@@ -336,6 +337,83 @@ int main(){
     }else{
         printf("\nHas alcanzado el numero maximo de intentos, porfavor intentelo de nuevo mas tarde. ");
     }
+
+    return 0;
+}
+*/
+
+
+// 10. Retomamos el ejercicio 11 del documento LC1 – Práctica 2 – Estructuras de control if y
+// switch:
+// “Pedir al usuario que ingrese dos números (permitir ingresar número con decimales).
+// Luego presentar el siguiente menú:
+// 1. Informar su suma
+// 2. Informar su resta
+// 3. Informar su multiplicación
+// 4. Informar su división
+// 5. Salir
+// Seleccione una operación:
+// Mostrar el resultado de la operación seleccionada. Si el usuario ingresa la opción 5 el
+// programa debe terminar.”
+// Vamos a modificar el mismo de manera que el menú se muestre al usuario mientras
+// este no se ingrese la opción 6.
+// Además agregar una opción 5 que muestre la cantidad de operaciones que realizó el
+// usuario.
+// El menú que se mostrará al usuario quedará entonces de la siguiente forma:
+// 1. Informar su suma
+// 2. Informar su resta
+// 3. Informar su multiplicación
+// 4. Informar su división
+// 5. Informar cantidad de operaciones realizadas
+// 6. Salir
+// Seleccione una operación:
+int main(){
+    float resultado, num1, num2;
+    int datas;
+    printf("Ingrese dos numeros, el primero: ");
+    scanf("%f", num1);
+    printf("Ingrese el segundo numero: ");
+    scanf("%f", num2);
+   
+   
+    do
+    {    
+    printf("1. Informar su suma\n2. Informar su resta\n3. Informar su multiplicación\n4. Informar su división\n5. Informar la cantidad de operaciones realizadas\n6. Salir\nIngreselo aqui: ");
+    scanf("%d", datas);
+    switch (datas)
+    {
+    case 1:
+        resultado = num1 + num2;
+        printf("Su suma es: %.2f", resultado);
+        break;
+    case 2:
+        resultado = num1 - num2;
+        printf("Su resta es: %.2f", resultado);
+        break;
+    case 3:
+        resultado = num1 * num2;
+        printf("Su multiplicacion es: %.2f", resultado);
+        break;
+    case 4:
+        resultado = num1 / num2;
+        printf("Su division es: %.2f", resultado);
+        break;
+    case 5:
+
+        printf("La cantidad de operaciones realizadas es de: ");
+        break;
+    case 6:
+        printf("Saliendo... Gracias por usar la calculadora");
+        break;
+    default:
+        printf("El numero ingresado es incorrecto, ingreselo nuevamente");
+        break;
+    }
+    } while (datas != 6);
+
+
+
+
 
     return 0;
 }

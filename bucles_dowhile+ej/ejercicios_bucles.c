@@ -369,51 +369,49 @@ int main(){
 // Seleccione una operación:
 int main(){
     float resultado, num1, num2;
-    int datas;
+    int datas, contador = 0;
     printf("Ingrese dos numeros, el primero: ");
-    scanf("%f", num1);
+    scanf("%f", &num1);
     printf("Ingrese el segundo numero: ");
-    scanf("%f", num2);
-   
+    scanf("%f", &num2);
    
     do
     {    
-    printf("1. Informar su suma\n2. Informar su resta\n3. Informar su multiplicación\n4. Informar su división\n5. Informar la cantidad de operaciones realizadas\n6. Salir\nIngreselo aqui: ");
-    scanf("%d", datas);
+    printf("\n1. Informar su suma\n2. Informar su resta\n3. Informar su multiplicación\n4. Informar su división\n5. Informar la cantidad de operaciones realizadas\n6. Salir\nIngreselo aqui: ");
+    scanf("%d", &datas);
     switch (datas)
     {
     case 1:
         resultado = num1 + num2;
-        printf("Su suma es: %.2f", resultado);
+        printf("\nSu suma es: %.2f\n", resultado);
+        contador += 1;
         break;
     case 2:
         resultado = num1 - num2;
-        printf("Su resta es: %.2f", resultado);
+        printf("\nSu resta es: %.2f\n", resultado);
+        contador += 1;
+
         break;
     case 3:
         resultado = num1 * num2;
-        printf("Su multiplicacion es: %.2f", resultado);
+        printf("\nSu multiplicacion es: %.2f\n", resultado);
         break;
     case 4:
         resultado = num1 / num2;
-        printf("Su division es: %.2f", resultado);
+        printf("\nSu division es: %.2f\n", resultado);
+        contador += 1;
         break;
     case 5:
-
-        printf("La cantidad de operaciones realizadas es de: ");
+        printf("\nLa cantidad de operaciones realizadas es de: %d\n", contador);
         break;
     case 6:
-        printf("Saliendo... Gracias por usar la calculadora");
+        printf("\nSaliendo... Gracias por usar la calculadora\n");
         break;
     default:
-        printf("El numero ingresado es incorrecto, ingreselo nuevamente");
+        printf("\nEl numero ingresado es incorrecto, ingreselo nuevamente\n");
         break;
     }
     } while (datas != 6);
-
-
-
-
 
     return 0;
 }
